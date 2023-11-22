@@ -1,0 +1,15 @@
+# bad call to predefined function - missing equals
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+import WACCmath
+
+begin
+  int x  call factorial(4)
+end

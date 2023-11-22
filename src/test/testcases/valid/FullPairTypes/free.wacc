@@ -1,0 +1,11 @@
+# Create and free a nested typed pair
+
+# Output:
+
+# Program:
+
+begin
+  pair(int, char) a = newpair(10, 'a') ;
+  pair(string, pair(int, char)) b = newpair("hii", a);
+  free b
+end

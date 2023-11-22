@@ -1,0 +1,24 @@
+# Testing isAlphaChar on alphabetical chars and non alphabetical
+
+# Output:
+# true
+# false
+# true
+# true
+
+# Program:
+
+import WACCchar
+
+begin
+  bool b = call isAlphaChar('a');
+  bool b1 = call isAlphaChar('-');
+
+  bool b2 = call isAlphaChar('X');
+  bool b3 = call isAlphaChar('Z');
+  println(b);
+  println(b1);
+  println(b2);
+  println(b3)
+
+end

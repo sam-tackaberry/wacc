@@ -1,0 +1,19 @@
+# checking predefined function calls within a while loop
+
+# Output:
+# [3, 6, 9, 12]
+# [9, 18, 27, 36]
+# [27, 54, 81, 108]
+
+# Program:
+# We continously multiply all elements of the array by 3 until the first elements exceeds 20
+
+import WACCarray
+
+begin
+  int[] arr = [1,2,3,4];
+  while arr[0] < 20 do
+    arr = call multiplyArray(arr, 3);
+    arr = call printArray(arr)
+  done
+end

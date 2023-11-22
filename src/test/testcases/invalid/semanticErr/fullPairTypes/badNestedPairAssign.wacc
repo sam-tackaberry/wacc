@@ -1,0 +1,15 @@
+# Assignment into a pair with different type information 
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(0, 0);
+  pair(pair(int, int), int) q = newpair(p, 0);
+  pair(int, bool) r = fst q
+end

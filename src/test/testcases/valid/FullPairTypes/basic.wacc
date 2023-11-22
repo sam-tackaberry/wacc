@@ -1,0 +1,9 @@
+# nested pair type information allowed
+
+# Output:
+
+# Program:
+
+begin 
+  pair(pair(int, int), int) p = null                                                                                                     
+end

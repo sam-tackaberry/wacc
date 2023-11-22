@@ -1,0 +1,24 @@
+
+# Testing basic calls to math functions
+
+# Output:
+# 6
+# -10
+# 0
+
+
+# Program:
+
+import WACCmath
+
+begin
+  int doubleThree = call double(3);
+  int doubleMinusFive = call double(-5);
+  int doubleZero = call double(0);
+
+  println(doubleThree);
+  println(doubleMinusFive);
+  println(doubleZero)
+
+end
+

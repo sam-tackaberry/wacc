@@ -1,0 +1,15 @@
+# null pair assignment
+
+# Output:
+# (nil)
+# (nil)
+#
+
+# Program:
+
+begin
+  pair(pair(int, int), pair(char, int)) f = null ;
+  println f ;
+  f = null ;
+  println f
+end

@@ -1,0 +1,34 @@
+# create a pair(int, pair(char, char)) with a second reference to it and check it works
+
+# Output:
+# #addrs#
+# #addrs#
+# true
+# 10
+# 10
+# true
+# #addrs#
+# #addrs#
+# true
+#
+
+# Program:
+
+begin
+  pair(char, char) k = newpair('a', 'b');
+  pair(int, pair(char, char)) p = newpair(10, k) ;
+  pair(int, pair(char, char)) q = p;
+  println p ;
+  println q ;
+  println p == q ;
+  int x = fst p ;
+  int y = fst q ;
+  println x ;
+  println y ;
+  println x == y ;
+  pair(char, char) c1 = snd p ;
+  pair(char, char) c2 = snd q ;
+  println c1 ;
+  println c2 ;
+  println c1 == c2
+end

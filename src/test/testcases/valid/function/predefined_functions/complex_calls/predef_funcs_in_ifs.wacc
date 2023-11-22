@@ -1,0 +1,22 @@
+# Checking predefined function calls in if statements
+
+# Output:
+# 84
+
+# Program:
+# If a is odd, we call ncr and if not we call pcr
+
+import WACCmath
+
+begin
+  int a = 13;
+  bool b = call odd(13);
+  if b
+  then
+    int x = call ncr(9, 3);
+    println(x)
+  else
+    int y = call perm(10, 4);
+    println(y)
+  fi
+end

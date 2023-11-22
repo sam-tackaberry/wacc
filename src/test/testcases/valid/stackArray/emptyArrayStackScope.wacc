@@ -1,0 +1,12 @@
+# Scoping shouldn't affect arrays
+
+# Output:
+
+# Program:
+
+begin
+  int[] x = stack [] ;
+  begin
+    bool y = true
+  end
+end

@@ -1,0 +1,15 @@
+# bad call to predefined function - parameters brackets not closed
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+import WACCmath
+
+begin
+  int x = call double(7
+end

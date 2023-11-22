@@ -1,0 +1,21 @@
+# Overloading with 2 functions of same return type but different parameter types
+
+# Output:
+# 3
+# 12
+#
+
+# Program:
+
+begin
+    int apple(int banana, int mango) is
+        return banana + mango
+    end 
+    int apple(string banana, string mango) is
+        return 12
+    end
+int apple = call apple(1,2);
+println apple;
+int anotherApple = call apple("banana", "mango");
+println anotherApple
+end

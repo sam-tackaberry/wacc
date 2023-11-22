@@ -1,0 +1,29 @@
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Main.scala:3:14: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport lexer._[0m
+[0m[[0m[33mwarn[0m] [0m[0m             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Main.scala:4:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport parser._[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Main.scala:5:17: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport parsley.{Parsley, Success, Failure, Result}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Parser.scala:143:17: private val _noFuncInOperation in object parser is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m    private val _noFuncInOperation = [0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyserUtils.scala:3:20: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport symbolTable._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyserUtils.scala:6:25: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport semanticAnalyser._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SymbolTable.scala:32:17: dead code following this construct[0m
+[0m[[0m[33mwarn[0m] [0m[0m            obj match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SymbolTable.scala:29:9: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: None[0m
+[0m[[0m[33mwarn[0m] [0m[0m        optS match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:473:17: return statement uses an exception to pass control to the caller of the enclosing named method compareArgumentAndReturnTypes[0m
+[0m[[0m[33mwarn[0m] [0m[0m                return[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m9 warnings found[0m

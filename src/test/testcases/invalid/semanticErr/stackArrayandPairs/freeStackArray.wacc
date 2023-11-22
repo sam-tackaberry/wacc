@@ -1,0 +1,13 @@
+# Attempting to free an array on the stack
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int[] a = stack [1, 2];
+  free a
+end

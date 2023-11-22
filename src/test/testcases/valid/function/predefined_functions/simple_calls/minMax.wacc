@@ -1,0 +1,31 @@
+# Testing min and max functions for ints
+
+# Output:
+# 19
+# 19
+# -4
+# 1
+
+# Program:
+
+import WACCmath
+
+begin
+  int a = 19;
+  int b = 19;
+  int c = 1;
+  int d = 0;
+  int e = -4;
+  int f = 87;
+  
+  int maxAB = call max(a, b);
+  int maxBC = call max(b, c);
+  int minDE = call min(d, e);
+  int minCF = call min(c, f);
+
+  println(maxAB);
+  println(maxBC);
+  println(minDE);
+  println(minCF)
+
+end

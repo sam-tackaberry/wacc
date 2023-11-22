@@ -1,0 +1,17 @@
+# Trying to assign a pair with different type
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  pair(int, int) p1 = newpair(0, 0);
+  pair(char, char) p2 = newpair('a', 'a');
+  pair(pair(int, int), int) p3 = newpair(p1, 0);
+  pair(pair(char, char), int) p4 = newpair(p4, 0);
+  p3 = p4
+end

@@ -1,0 +1,22 @@
+# Testing basic calls to the abs function
+
+# Output:
+# 100
+# 110
+# 0
+
+
+# Program:
+
+import WACCmath
+
+begin
+  int x = call abs(-100);
+  int y = call abs(110);
+  int z = call abs(0);
+
+  println(x);
+  println(y);
+  println(z)   
+
+end

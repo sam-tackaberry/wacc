@@ -1,0 +1,24 @@
+# Testing printing arrays
+
+# Output:
+# [1, 2, 3]
+# []
+# [a, b, c]
+# []
+
+# Program:
+
+import WACCarray
+
+begin
+
+  int[] arr = [1,2,3];
+  arr = call printArray(arr);
+  int[] arr1 = [];
+  arr1 = call printArray(arr1);
+
+  char[] arr2 = ['a', 'b', 'c'];
+  arr2 = call printArray(arr2);
+  char[] arr3 = [];
+  arr3 = call printArray(arr3)
+end

@@ -1,0 +1,25 @@
+# Testing isNumericChar on numeric chars and non numeric
+
+# Output:
+# true
+# false
+# true
+# false
+
+
+# Program:
+
+import WACCchar
+
+begin
+  bool b = call isNumericChar('1');
+  bool b1 = call isNumericChar('a');
+
+  bool b2 = call isNumericChar('9');
+  bool b3 = call isNumericChar('x');
+  println(b);
+  println(b1);
+  println(b2);
+  println(b3)
+
+end

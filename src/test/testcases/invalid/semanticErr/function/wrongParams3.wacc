@@ -1,0 +1,15 @@
+# Calling a predefined function with incorrect number of parameters
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+import WACCmath
+
+begin
+  int result = call odd(1,2,3,4)
+end

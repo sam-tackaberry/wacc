@@ -1,0 +1,9 @@
+# multiple nesting of types
+
+# Output:
+
+# Program:
+
+begin 
+    pair(pair(pair(pair(int, char), string), char), int) p = null
+end

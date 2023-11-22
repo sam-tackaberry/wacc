@@ -1,0 +1,40 @@
+
+# Testing basic calls to parity-checking functions
+
+# Output:
+# false
+# true
+# false
+# true
+# false
+# true
+# true
+# false
+
+# Program:
+
+import WACCmath
+
+
+begin 
+  bool b1 = call odd(0);
+  bool b2 = call odd(7);
+  bool b3 = call odd(8);
+  bool b4 = call odd(13);
+
+  bool b5 = call even(1);
+  bool b6 = call even(4);
+  bool b7 = call even(90);
+  bool b8 = call even(87);
+
+
+  println(b1);
+  println(b2);
+  println(b3);
+  println(b4);
+  println(b5);
+  println(b6);
+  println(b7);
+  println(b8)
+
+end

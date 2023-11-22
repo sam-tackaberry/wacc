@@ -1,0 +1,181 @@
+
+# a math library containing commonly used mathematical operations 
+# to use these functions, insert 'import WACCarray' before the start of your program
+begin
+
+  bool odd(int x) is 
+    if x % 2 == 0 then
+      return false
+    else
+      return true
+    fi
+  end
+
+  bool even(int x) is 
+    if x % 2 == 0 then
+      return true
+    else
+      return false
+    fi
+  end
+
+  int abs(int x) is 
+    if x < 0 then
+      return x * -1
+    else
+      return x
+    fi
+  end
+
+  int max(int x, int y) is
+    if x >= y then
+      return x
+    else
+      return y
+    fi
+  end
+
+  int min(int x, int y) is
+    if x <= y then
+      return x
+    else
+      return y
+    fi
+  end
+
+  int factorial(int x) is
+    if x < 0 then
+      return 0
+    else
+      skip
+    fi;
+    int count = 1;
+    int res = 1;
+    while count <= x do
+      res = res * count;
+      count = count + 1
+    done;
+    return res
+  end
+
+
+  int perm(int n, int k) is
+    if n < 0 || k < 0 || n < k then
+      return 0
+    else
+      skip
+    fi;
+    int res = 0;
+    if k <= n then
+      int numerator = call factorial(n);
+      int denominator = call factorial(n - k);
+      res = numerator / denominator;
+      return res
+    else
+      skip
+    fi;
+    return res
+  end
+
+
+  int ncr(int n, int k) is
+    if n < 0 || k < 0 || n < k then
+      return 0
+    else
+      skip
+    fi;
+    int res = 0;
+    if k <= n then
+      int numerator = call factorial(n);
+      int denominator1 = call factorial(n - k);
+      int denominator2 = call factorial(k);
+      int denominator = denominator1 * denominator2;
+      res = numerator / denominator;
+      return res
+    else
+      skip
+    fi;
+    return res
+  end
+
+
+  # Efficient power function, O(log y) time and constant space
+  # assumes exponent > 0
+  int power(int x, int y) is
+    if y < 0 then
+      return 0
+    else
+      skip
+    fi;
+
+    int res = 1;
+    while y > 0 do
+      bool yOdd = call odd(y);
+      if (yOdd) then
+        res = res * x
+      else
+        skip
+      fi;
+      y = y / 2;
+      x = x * x
+    done;
+    return res
+  end
+
+  int double(int x) is
+    return x * 2
+  end
+
+  # returns greatest common divisior, implemented with Euclidean algorithm
+  # returns 0 if either x or y is negative
+  # suffixed with w to avoid assembly conflicts
+  int gcd(int x, int y) is
+    if x < 0 || y < 0 then
+      return 0
+    else
+     skip
+    fi;
+    while y != 0 do
+      int temp = y;
+      y = x % y;
+      x = temp
+    done;
+    return x
+  end
+
+  # returns lowest common multiple
+  # returns 0 if either x or y is negative
+  # avoids overflows with order of division and multiplication
+  # suffixed with w to avoid assembly conflicts
+  int lcm(int x, int y) is 
+    if x < 0 || y < 0 then
+      return 0
+    else
+     skip
+    fi;
+    int gcd = call gcd(x, y);
+    int res = (x / gcd) * y;
+    return res
+  end
+
+  # Checks if a number is prime with the sqrt method
+  bool isPrime(int x) is
+    if x == 1 then
+      return false
+    else
+      skip
+    fi;
+    int i = 2;
+    while i * i <= x do 
+      if x % i == 0 then
+        return false
+      else
+        skip
+      fi;
+      i = i + 1
+    done;
+    return true
+  end
+
+  skip
+end

@@ -1,0 +1,62 @@
+# character related functions
+# to use these functions, insert 'import WACCchar before the start of your program
+begin
+  # returns 0 if you give it a non-alphabetic character
+  char toLowerChar(char c) is
+    # check if alpha
+    bool b = call isAlphaChar(c);
+    if !b then
+      return '0'
+    else
+      skip
+    fi;
+    int ordC = ord c;
+    int newOrd = ordC + 32; 
+    char res = chr newOrd;
+    return res
+  end
+
+  # returns 0 if you give it a non-alphabetic character
+  char toUpperChar(char c) is
+    bool b = call isAlphaChar(c);
+    if !b then
+      return '0'
+    else
+      skip
+    fi;
+    int ordC = ord c;
+    int newOrd = ordC - 32; 
+    char res = chr newOrd;
+    return res
+  end
+
+  bool isAlphaChar(char c) is 
+    int ordinal = ord c;
+    if (ordinal >= 65 && ordinal <= 90 ) || (ordinal >= 97 && ordinal <= 122) then
+      return true
+    else
+      return false
+    fi
+  end
+
+  bool isNumericChar(char c) is 
+    int ordinal = ord c;
+    if ordinal >= 48 && ordinal <= 57  then
+      return true
+    else
+      return false
+    fi
+  end
+
+  bool isAlphaNumericChar(char c) is 
+    bool a = call isAlphaChar(c);
+    bool n = call isNumericChar(c);
+    if (a || n) then
+      return true
+    else
+      return false
+    fi
+  end
+
+  skip
+end

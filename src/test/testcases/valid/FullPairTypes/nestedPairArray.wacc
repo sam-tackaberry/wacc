@@ -1,0 +1,11 @@
+# can create array of nested pairs
+
+# Output:
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(5, 6);
+  pair(pair(int, int), char) t = newpair(p, 'e');
+  pair(pair(int, int), char)[] a = [t, t]
+end

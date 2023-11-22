@@ -1,0 +1,29 @@
+# Testing contains methods
+
+# Output:
+# false
+# true
+# true
+# false
+
+
+
+# Program:
+
+import WACCarray
+
+begin 
+
+  int[] arr = [1,2,56,7,56,1,2,6,8,4,3,8,4,6];
+  bool b = call arrayContains(arr, -1);
+  bool b1 = call arrayContains(arr, 4);
+  println(b);
+  println(b1);
+
+  char[] arr1 = ['c', 'd', 'p'];
+  bool b2 = call arrayContains(arr1, 'c');
+  bool b3 = call arrayContains(arr1, 'g');
+  println(b2);
+  println(b3)
+
+end

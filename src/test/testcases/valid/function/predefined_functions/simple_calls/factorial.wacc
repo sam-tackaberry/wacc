@@ -1,0 +1,22 @@
+
+# Testing basic calls to factorial
+
+# Output:
+# 120
+# 0
+# 1
+
+
+# Program:
+
+import WACCmath
+
+begin 
+  int fiveFact = call factorial(5);
+  int negFact = call factorial(-2);
+  int zeroFact = call factorial(0);
+
+  println(fiveFact);
+  println(negFact);
+  println(zeroFact)
+end

@@ -1,0 +1,44 @@
+
+# Testing basic calls to permutation function
+
+# Output:
+# 210
+# 3024
+# 0
+# 1
+# 0
+# 0
+# 84
+# 0
+
+
+# Program:
+
+import WACCmath
+
+begin
+  int x = call perm(7, 3);
+  int y = call perm(9, 4);
+
+  int z1 = call perm(4, 9);
+  int z2 = call perm(0, 0);
+  int z3 = call perm(0, 1);
+  int z4 = call perm(-1, 5);
+
+  println(x);
+  println(y);
+  println(z1);
+  println(z2);
+  println(z3);
+  println(z4);
+
+  int a = 9;
+  int b = 3;
+  int c = 0;
+  int d = -1;
+  int e = call ncr(a, b);
+  int f = call ncr(c, d);
+  println(e);
+  println(f)
+
+end

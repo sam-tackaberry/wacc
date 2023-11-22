@@ -1,0 +1,32 @@
+# Testing that the user can call predefined functions in their own functions
+
+# Output: 
+# 120
+# 12
+
+# Program:
+
+import WACCmath
+
+begin
+  # If a prime number is inputted, the factorial is returned. If the number is not prime, it is doubled and returned
+  int f(int x) is
+    int fact = call factorial(x);
+    int doubledX = call double(x);
+    bool prime = call isPrime(x);
+    if prime then 
+      return fact
+    else
+      return doubledX
+    fi
+  end
+
+  int x = 5;
+  int y = call f(x);
+  println(y);
+
+  int a = 6;
+  int b = call f(a);
+  println(b)
+
+end

@@ -1,0 +1,15 @@
+# nested pair assignments legal with specific pair type
+
+# Output:
+# 7
+#
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(2, 8) ;
+  pair(int, pair(int, int)) q = newpair(1, p) ;
+  fst snd q = 7 ;
+  int x = fst p ;
+  println x
+end

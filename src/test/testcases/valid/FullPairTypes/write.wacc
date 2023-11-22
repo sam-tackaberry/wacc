@@ -1,0 +1,18 @@
+# create a nested pair and write to its first element
+
+# Output:
+# 34
+# 49
+#
+
+# Program:
+
+begin
+  pair(int, char) p = newpair(10, 'a') ;
+  pair(int, pair(int, char)) q = newpair(34, p);
+  int f = fst q ;
+  println f ;
+  fst snd q = 49 ;
+  f = fst p ;
+  println f
+end

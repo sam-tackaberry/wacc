@@ -1,0 +1,21 @@
+# Overloading with 2 functions with different number of parameters
+
+# Output:
+# 60
+# 7
+#
+
+# Program:
+
+begin
+    int apple(int banana, int mango, int peach) is
+        return banana + mango + peach
+    end 
+    int apple(int banana, int mango) is
+        return banana + mango
+    end
+int apple = call apple(10,20,30);
+println apple;
+int anotherApple = call apple(3,4);
+println anotherApple
+end

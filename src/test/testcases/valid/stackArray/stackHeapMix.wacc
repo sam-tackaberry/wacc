@@ -1,0 +1,16 @@
+# Testing a 2d array on the heap that holds an array in the stack
+
+# Input: b
+
+# Output:
+# b
+#
+
+# Program:
+
+begin
+    char[] a = ['g', 'y'] ;
+    char[][] def = [a];
+    read def[0][1];
+    println def[0][1]
+end

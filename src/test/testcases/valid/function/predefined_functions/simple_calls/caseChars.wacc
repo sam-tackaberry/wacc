@@ -1,0 +1,19 @@
+# Testing case conversion on chars 
+
+# Output:
+# C
+# d
+
+# Program:
+
+import WACCchar
+
+begin
+  char c = 'c';
+  char capitalC = call toUpperChar(c);
+  println(capitalC);
+
+  char D = 'D';
+  char lowerD = call toLowerChar(D);
+  println(lowerD)
+end

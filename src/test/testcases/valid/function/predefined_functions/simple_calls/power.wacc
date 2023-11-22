@@ -1,0 +1,30 @@
+
+# Testing basic calls to power
+
+# Output:
+# 1
+# 9
+# 0
+
+# Program:
+
+import WACCmath
+
+begin 
+  int base = 3;
+  int exp = 0;
+  int res = call power(base, exp);
+
+  int base1 = 3;
+  int exp1 = 2;
+  int res1 = call power(base1, exp1);
+
+  int base2 = 3;
+  int exp2 = -1;
+  int res2 = call power(base2, exp2);
+
+  println(res);
+  println(res1);
+  println(res2)
+
+end

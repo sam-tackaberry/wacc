@@ -1,0 +1,17 @@
+#ignore metals folder
+.metals
+
+#ignore bsp
+.bsp
+
+#ignore target
+target
+
+#ignore project folder
+project 
+
+#ignore assembly code
+*.s
+
+#ignore .vscode folder
+.vscode

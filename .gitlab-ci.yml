@@ -1,0 +1,14 @@
+stages:
+  - build
+  - parsertest
+
+build-job:
+    stage: build
+    script:
+        - make
+
+test-job:
+    stage: parsertest
+    script:
+        - make
+        - ./IntegrationTestsBackEnd.rb

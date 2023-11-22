@@ -1,0 +1,17 @@
+# Testing multiplying arrays
+
+# Output:
+# [5, 10, 15]
+# [0, 0, 0]
+
+# Program:
+
+import WACCarray
+
+begin
+  int[] arr = [1,2,3];
+  arr = call multiplyArray(arr, 5);
+  arr = call printArray(arr);
+  arr = call zeroArray(arr);
+  arr = call printArray(arr)
+end

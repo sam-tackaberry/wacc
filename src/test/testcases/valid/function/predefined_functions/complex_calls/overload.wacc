@@ -1,0 +1,28 @@
+# Testing that the user can redefine predefined functions such as abs and double
+
+# Output: 
+# -5
+# 15
+
+
+
+
+import WACCmath
+
+
+begin
+  int abs(int x) is
+    return x * -1
+  end
+  int double(int x) is
+    return 3 * x
+  end
+
+  int t = 5;
+  int absT = call abs(t);
+  int doubleT = call double(t);
+
+  println(absT);
+  println(doubleT)
+
+end

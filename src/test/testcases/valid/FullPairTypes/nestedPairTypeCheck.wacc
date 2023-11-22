@@ -1,0 +1,10 @@
+# Simple correct type checking in nested pairs
+
+# Output:
+
+# Program:
+
+begin 
+    pair(int, int) p = newpair(1, 2);
+    pair(pair(int, int), char) q = newpair(p, 'b')
+end

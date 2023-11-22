@@ -1,0 +1,55 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(e49c6b10-10ee-4563-98c1-fc1b0706823c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /homes/bp821/WACC_09/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:6:14: object quoted is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.quoted.Expr[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:62:20: value funcReturnType is not a member of wacc.semanticAst.SemFunction[0m
+[0m[[0m[31merror[0m] [0m[0m        if(funcObj.funcReturnType != statementGetReturnType(func.body.last)){[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:68:38: Symbol 'type wacc.semanticAst.SemanticNode' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'method wacc.symbolTable.SymbolTable.lookupAll'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type SemanticNode is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'symbolTable.class' was compiled against an incompatible version of wacc.semanticAst.[0m
+[0m[[0m[31merror[0m] [0m[0m        val fSem : Option[SemNode] = st.lookupAll(func.argIdent, EnumFunction)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:83:31: not found: type FunctionSem[0m
+[0m[[0m[31merror[0m] [0m[0m                val funcObj : FunctionSem = FunctionSem(func.argType, funcSt, formals)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:83:45: not found: value FunctionSem[0m
+[0m[[0m[31merror[0m] [0m[0m                val funcObj : FunctionSem = FunctionSem(func.argType, funcSt, formals)[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:84:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: wacc.semanticAst.SemFunction[0m
+[0m[[0m[31merror[0m] [0m[0m                st.add(func.argIdent, EnumFunction, funcObj)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:99:36: not found: type TYPE[0m
+[0m[[0m[31merror[0m] [0m[0m    def getExprType(expr : Expr) : TYPE = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:106:18: object PairLiter is not a case class, nor does it have a valid unapply/unapplySeq member[0m
+[0m[[0m[31merror[0m] [0m[0m            case PairLiter(_) => typeToIdObj(Nothing)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:106:46: not found: value Nothing[0m
+[0m[[0m[31merror[0m] [0m[0m            case PairLiter(_) => typeToIdObj(Nothing)[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:109:40: not found: value getArrayType[0m
+[0m[[0m[31merror[0m] [0m[0m            case ArrayElem(name, _) => getArrayType(expr)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:112:20: not found: value exprsHaveSameType[0m
+[0m[[0m[31merror[0m] [0m[0m                if(exprsHaveSameType(e1, e2)){[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:6:21: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport scala.quoted.Expr[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/SemanticAnalyser.scala:57:13: local var funcSt in method functionCheck is never updated: consider using immutable val[0m
+[0m[[0m[33mwarn[0m] [0m[0m        var funcSt : SymbolTable = SymbolTable(Some(st))[0m
+[0m[[0m[33mwarn[0m] [0m[0m            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 7 Feb 2023, 20:43:55[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

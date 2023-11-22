@@ -1,0 +1,146 @@
+# array library
+# to use these functions, insert 'import WACCarray' before the start of your program
+begin
+  bool arrayContains(int[] arr, int elem) is
+    int i = 0;
+    int n = len arr;
+    while i < n do
+      if arr[i] == elem then
+        return true
+      else
+        skip
+      fi;
+      i = i + 1
+    done;
+    return false
+  end
+
+
+  bool arrayContains(char[] arr, char elem) is
+    int i = 0;
+    int n = len arr;
+    while i < n do
+      if arr[i] == elem then
+        return true
+      else
+        skip
+      fi;
+      i = i + 1
+    done;
+    return false
+  end
+
+
+  # reversing, defined only for integer array
+  int[] reverse(int[] arr) is
+    int n = len arr;
+    int i = 0;
+    while i < n / 2 do
+      int temp = arr[i];
+      arr[i] = arr[n - i - 1];
+      arr[n - i - 1] = temp;
+      i = i + 1
+    done;
+    return arr
+  end
+
+  # sorting, defined only for integer array
+   int[] sort(int[] arr, bool reverse) is
+    int n = len arr;
+    int i = 0;
+    while i < n do
+      int j = i + 1;
+      while j < n do 
+        if reverse then
+          if arr[i] < arr[j] then
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp
+          else
+            skip
+          fi
+        else
+          if arr[i] > arr[j] then
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp
+          else
+            skip
+          fi
+        fi;
+        j = j + 1  
+      done;
+      i = i + 1
+    done;
+    return arr
+  end
+
+  # zeroes the inputted array
+  int[] zeroArray(int[] arr) is
+    int[] res = call multiplyArray(arr, 0);
+    return res
+  end
+    
+  # multiply all elements by the provided scalar
+  int[] multiplyArray(int[] arr, int k) is
+    int length = len arr;
+    int count = 0;
+    while count < length do
+      arr[count] = arr[count] * k;
+      count = count + 1
+    done;
+    return arr
+  end
+
+
+
+  int[] printArray(int[] arr) is
+    int length = len arr;
+    if length == 0 then
+      println "[]";
+      return arr
+    else
+      skip
+    fi;
+    int count = 0;
+    print "[";
+    while count < length - 1 do
+      int val = arr[count];
+      
+      print val;
+      print ", ";
+      count = count + 1
+    done;
+    print(arr[count]);
+    println("]");
+    return arr
+  end
+
+
+
+  char[] printArray(char[] arr) is
+    int length = len arr;
+    if length == 0 then
+      println "[]";
+      return arr
+    else
+      skip
+    fi;
+    int count = 0;
+    print "[";
+    while count < length - 1 do
+      char val = arr[count];
+      print val;
+      print ", ";
+      count = count + 1
+    done;
+    print(arr[count]);
+    println("]");
+    return arr
+  end
+
+
+
+
+  skip
+end

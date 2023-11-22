@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run "null", Some(7fd5359c-3387-4c73-af16-5bff7a3b8350), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /homes/bp821/WACC_09/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Main.scala:5:26: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport parsley.character.digit[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/homes/bp821/WACC_09/src/main/scala/wacc/Main.scala:28:18: local val bool in method main is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m        lazy val bool: Parsley[Boolean] =[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 30 Jan 2023, 13:19:51[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

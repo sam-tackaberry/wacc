@@ -1,0 +1,26 @@
+# Testing reversal of an array
+
+# Output:
+# [4, 3, 2, 1]
+# [4, 2, 6, 1, 5]
+# []
+
+# Program:
+
+import WACCarray
+
+begin
+  int[] arr = [1,2,3,4];
+  arr = call reverse(arr);
+  arr = call printArray(arr);
+
+
+  int[] arr1 = [5,1,6,2,4];
+  arr1 = call reverse(arr1);
+  arr1 = call printArray(arr1);
+
+
+  int[] arr2 = [];
+  arr2 = call reverse(arr2);
+  arr2 = call printArray(arr2)
+end

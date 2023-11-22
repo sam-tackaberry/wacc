@@ -1,0 +1,11 @@
+# multiple nesting of types
+
+# Output:
+
+# Program:
+
+begin 
+    pair(int, int) p = newpair(1, 5);
+    pair(pair(int, int), char) q = newpair(p, 's');
+    pair(pair(pair(int, int), char), int) b = newpair(q, 100)
+end

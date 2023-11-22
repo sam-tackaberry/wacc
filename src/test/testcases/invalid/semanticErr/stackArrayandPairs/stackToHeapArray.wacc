@@ -1,0 +1,13 @@
+# Attempting to move array from stack to heap
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int[] a = stack [1, 2];
+  a = [4, 5]
+end

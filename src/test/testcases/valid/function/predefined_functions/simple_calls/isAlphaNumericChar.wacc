@@ -1,0 +1,24 @@
+# Testing isAlphaNumericChar on alphanumeric and non-alphanumeric chars
+
+# Output:
+# true
+# true
+# false
+# false
+
+# Program:
+
+import WACCchar
+
+begin
+  bool b = call isAlphaNumericChar('a');
+  bool b1 = call isAlphaNumericChar('9');
+
+  bool b2 = call isAlphaNumericChar(';');
+  bool b3 = call isAlphaNumericChar('-');
+  println(b);
+  println(b1);
+  println(b2);
+  println(b3)
+
+end

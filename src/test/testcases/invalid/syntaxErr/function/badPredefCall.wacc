@@ -1,0 +1,16 @@
+# bad call to predefined function - no 'call'
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+import WACCmath
+
+
+begin
+  int x = perm(7, 5)
+end

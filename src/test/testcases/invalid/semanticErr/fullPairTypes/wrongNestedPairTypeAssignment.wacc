@@ -1,0 +1,16 @@
+# Assignment to the first of a pair with a different type
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(1, 2);
+  pair(char, char) q = newpair('a', 'b');
+  pair(pair(int, int), int) r = newpair(p, 3);
+  fst r = q
+end

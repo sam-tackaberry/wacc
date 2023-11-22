@@ -1,0 +1,14 @@
+# Nested pair has the wrong type information of it's elements
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+begin
+  pair(int, int) p1 = newpair(0, 0);
+  pair(pair(int), int) = newpair(p1, 0)
+end

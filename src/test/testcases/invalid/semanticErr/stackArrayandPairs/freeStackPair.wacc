@@ -1,0 +1,13 @@
+# Attempting to free a pair on the stack
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  pair(int, int) p = stack newpair(1, 2);
+  free p
+end

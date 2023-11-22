@@ -1,0 +1,15 @@
+# Calling a predefined function with parameters of wrong type
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+import WACCmath
+
+begin
+  int result = call perm(100, true)
+end

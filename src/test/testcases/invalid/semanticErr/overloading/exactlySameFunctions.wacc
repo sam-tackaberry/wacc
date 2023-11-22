@@ -1,0 +1,20 @@
+# Overloading with 2 functions exactly same return types and parameter types
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+    int apple(int banana1, int mango1) is
+        return banana1 * mango1
+    end 
+    int apple(int banana2, int mango2) is
+        return banana2 + mango2
+    end
+int apple = call apple(10,20);
+println apple
+end

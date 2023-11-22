@@ -1,0 +1,14 @@
+# Nested pair has the wrong type information of it's elements
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(1, 2);
+  pair(pair(char, int), int) q = newpair(p, 3)
+end
